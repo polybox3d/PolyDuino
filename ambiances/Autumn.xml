@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+    <name>Autumn</name>
+    <globalcolor>
+        <red>149</red>
+        <green>105</green>
+        <blu>68</blu>
+        <intensity>255</intensity>
+    </globalcolor>
+    <face name="top">
+        <horizontale>35</horizontale>
+        <verticale>35</verticale>
+    </face>
+    <face name="bot">
+        <horizontale>35</horizontale>
+        <verticale>35</verticale>
+    </face>
+    <face name="left">
+        <horizontale>35</horizontale>
+        <verticale>35</verticale>
+    </face>
+    <face name="right">
+        <horizontale>35</horizontale>
+        <verticale>35</verticale>
+    </face>
+    <face name="back">
+        <horizontale>35</horizontale>
+        <verticale>35</verticale>
+    </face>
+    <face name="front">
+        <horizontale>35</horizontale>
+        <verticale>35</verticale>
+    </face>
+</profile>

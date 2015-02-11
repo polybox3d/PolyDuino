@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CNCChecker</class>
+ <widget class="QWidget" name="CNCChecker">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Contrôle CNC</string>
+  </property>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>0</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Module CN prêt à l'emploi :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="Led" name="cncReadyLed">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../ressources.qrc">:/img/img/led_off_red.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>341</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Détails</string>
+   </property>
+   <widget class="Led" name="levelLubLed">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>103</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../ressources.qrc">:/img/img/led_off_red.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>76</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Moteur lubrificant</string>
+    </property>
+   </widget>
+   <widget class="Led" name="motorLubLed">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>76</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../ressources.qrc">:/img/img/led_off_red.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Led" name="vacuumLed">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../ressources.qrc">:/img/img/led_off_red.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>103</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Niveau de lubrifiant</string>
+    </property>
+   </widget>
+   <widget class="Led" name="cncPlugLed">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>29</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../ressources.qrc">:/img/img/led_off_red.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>29</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Outils CN branché</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Module d'aspiration</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>206</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="proxonRadio">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Proxon</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="manuelRadio">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Manuel</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Led</class>
+   <extends>QLabel</extends>
+   <header>Led.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

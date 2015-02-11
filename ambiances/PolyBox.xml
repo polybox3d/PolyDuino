@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+    <name>PolyBox</name>
+    <globalcolor>
+        <red>0</red>
+        <green>145</green>
+        <blu>255</blu>
+        <intensity>255</intensity>
+    </globalcolor>
+    <face name="top">
+        <horizontale>25</horizontale>
+        <verticale>25</verticale>
+    </face>
+    <face name="bot">
+        <horizontale>25</horizontale>
+        <verticale>25</verticale>
+    </face>
+    <face name="left">
+        <horizontale>25</horizontale>
+        <verticale>25</verticale>
+    </face>
+    <face name="right">
+        <horizontale>25</horizontale>
+        <verticale>25</verticale>
+    </face>
+    <face name="back">
+        <horizontale>25</horizontale>
+        <verticale>25</verticale>
+    </face>
+    <face name="front">
+        <horizontale>25</horizontale>
+        <verticale>25</verticale>
+    </face>
+</profile>

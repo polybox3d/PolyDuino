@@ -1,0 +1,66 @@
+QSpinBox {
+margin-left: 22px;  /* make room for the arrows */
+margin-right: 22px;  /* make room for the arrows */
+padding-right: -20px;
+padding-left: -20px;
+width: 75px;
+max-width: 75px;
+min-height: 23px;
+border-radius: 4px;
+}
+
+QSpinBox::up-button  {
+subcontrol-origin: margin;
+subcontrol-position: center right;
+width: 19px;
+height: 19px;
+border-width: 1px;
+}
+
+QSpinBox::up-arrow  {
+min-width: 19px;
+min-height: 19px;
+max-width: 19px;
+max-height: 19px;
+height: 19px;
+width: 19px;
+background-image: url(:/img/img/plus_border.png);
+}
+
+QSpinBox::up-arrow:disabled, QSpinBox::up-arrow:off 
+{
+        background-image: url(:/img/img/plus_border_disable.png);
+}
+
+QSpinBox::up-button:pressed  {
+top: 1px;
+right: 1px;
+}
+
+QSpinBox::down-button  {
+subcontrol-origin: margin;
+subcontrol-position: center left;
+width: 19px;
+height: 19px;
+border-width: 1px;
+}
+
+QSpinBox::down-arrow  {
+min-width: 19px;
+min-height: 19px;
+max-width: 19px;
+max-height: 19px;
+height: 19px;
+width: 19px;
+background-image: url(:/img/img/moins_border.png);
+}
+
+QSpinBox::down-arrow:disabled, QSpinBox::down-arrow:off 
+{
+        background-image: url(:/img/img/moins_border_disable.png);
+}
+
+QSpinBox::down-button:pressed  {
+top: 1px;
+left: 1px;
+}
