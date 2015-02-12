@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QByteArray>
 #include <QTimer>
+#include <QProcess>
 
 #include "Config.h"
 #include "mcode.h"
@@ -59,6 +60,7 @@ signals:
 public slots:
     void parseData();
     void hardwareTimerTimeout();
+    void connectionSlot();
 
 
 private:
@@ -77,6 +79,7 @@ private:
     QTimer _pingPongTimer;
     void parseMCode( QByteArray stream );
     ConnectorType _connectorType;
+    QProcess* _virtuSerial;
 
 };
 

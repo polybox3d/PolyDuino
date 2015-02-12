@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WarningPage</class>
+ <widget class="QWidget" name="WarningPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panneau de Contrôle</string>
+  </property>
+  <widget class="GlobalChecker" name="generalWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>250</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="SCannerChecker" name="scannerWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>400</width>
+     <height>250</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="PrinterChecker" name="printerWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>0</y>
+     <width>400</width>
+     <height>250</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="CNCChecker" name="cncWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>260</y>
+     <width>400</width>
+     <height>250</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>250</y>
+     <width>701</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="help">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>520</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aide</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../ressources.qrc">
+     <normaloff>:/img/img/help.png</normaloff>:/img/img/help.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="configuration">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>520</y>
+     <width>181</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Configuration logicielle</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../ressources.qrc">
+     <normaloff>:/img/img/conf.png</normaloff>:/img/img/conf.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dynamicTest">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>520</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tests Dynamiques</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../ressources.qrc">
+     <normaloff>:/img/img/test.png</normaloff>:/img/img/test.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="console">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>520</y>
+     <width>99</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Console</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pinEditor">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>520</y>
+     <width>91</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pin Editeur</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PrinterChecker</class>
+   <extends>QWidget</extends>
+   <header>PrinterChecker.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CNCChecker</class>
+   <extends>QWidget</extends>
+   <header>CNCChecker.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SCannerChecker</class>
+   <extends>QWidget</extends>
+   <header>SCannerChecker.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GlobalChecker</class>
+   <extends>QWidget</extends>
+   <header>GlobalChecker.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

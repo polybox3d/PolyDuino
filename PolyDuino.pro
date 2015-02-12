@@ -16,6 +16,7 @@ TEMPLATE = app
 
 INCLUDEPATH += Checker
 INCLUDEPATH += Module
+INCLUDEPATH += Page
 
 #UART Lib
 include(./qextserialport/src/qextserialport.pri)
@@ -41,7 +42,11 @@ SOURCES += main.cpp\
     Temperature.cpp \
     Module/PolyboxModule.cpp \
     Config.cpp \
-    ClosedLoopTimer.cpp
+    ClosedLoopTimer.cpp \
+    Page/WarningPage.cpp \
+    HomeButton.cpp \
+    Console.cpp \
+    DebugPin.cpp
 
 HEADERS  += MainWindow.h \
     SerialPort.h \
@@ -64,14 +69,21 @@ HEADERS  += MainWindow.h \
     Temperature.h \
     Module/PolyboxModule.h \
     Config.h \
-    ClosedLoopTimer.h
+    ClosedLoopTimer.h \
+    Page/WarningPage.h \
+    HomeButton.h \
+    Console.h \
+    DebugPin.h
 
 FORMS    += MainWindow.ui \
     Checker/SCannerChecker.ui \
     Checker/PrinterChecker.ui \
     Checker/GlobalChecker.ui \
     Checker/CNCChecker.ui \
-    Checker/CheckerModele.ui
+    Checker/CheckerModele.ui \
+    Page/WarningPage.ui \
+    Console.ui \
+    DebugPin.ui
 
 RESOURCES += \
     ressources.qrc

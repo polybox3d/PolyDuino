@@ -84,10 +84,20 @@ void PolyboxModule::setupConnection(QString path, QString port)
 {
 }
 
+void PolyboxModule::connectionSlot()
+{
+    connection( true );
+}
 
 PolyboxModule::ConnectionStatus PolyboxModule::connection( bool blocked_thread)
 {
     //_connected = _polyplexer->start();
+    _virtuSerial = new QProcess( this );
+    connect( _virtuSerial, SIGNAL(finished(int,QProcess::ExitStatus)), this,SLOT(finished(int,QProcess::ExitStatus)));
+    //connect( _polyplexer, SIGNAL(finished(int)), this,SLOT(stop()));
+    _virtuSerial->start( "/bin/sh", QStringList() << "startpipe.sh");
+
+    //isRunning = _virtuSerial->waitForStarted(3000) ;
     if ( _connected )
     {
         _numberOfMissingPingPong = PINGPONG_NOT_CONNECTED;

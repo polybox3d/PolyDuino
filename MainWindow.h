@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "PolyboxModule.h"
+#include "WarningPage.h"
+
 namespace Ui {
 class MainWindow;
 }
